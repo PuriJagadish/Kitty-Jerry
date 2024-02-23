@@ -1,0 +1,298 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+/* banner*/
+/* Banner styles */
+#banner {
+  position: relative;
+  width: 100%;
+}
+
+#banner .banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+#banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+}
+
+#banner .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* White text color */
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  font-size: 2rem; /* Large font size */
+}
+
+#banner p {
+  font-size: 1.5rem; /* Medium font size for paragraph */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  #banner .text {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  #banner p {
+    font-size: 1rem; /* Adjust paragraph font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #banner .text {
+    font-size: 1rem; /* Further adjust font size for smaller screens */
+  }
+
+  #banner p {
+    font-size: 0.5rem; /* Further adjust paragraph font size for smaller screens */
+  }
+}
+
+.font-cursive {
+  font-family: 'Sacramento', cursive; /* Applying Sacramento font */
+}
+
+.font-large {
+  font-size: 5rem; /* Increase font size for h1 */
+}
+
+.font-medium {
+  font-size: 1.5rem; /* Increase font size for p */
+}
+
+.font-gallery {
+  font-size: 3rem; /* Increase font size for p */
+}
+
+/* Invitation Section Styles */
+#invite {
+  padding: 50px 0; /* Add padding to the top and bottom */
+  text-align: center; /* Center-align text */
+  background: linear-gradient(to bottom right, #7d519e, #a45bb1, #bf6cb6, #e07dbc); /* Gradient from deep purple to soft pink */
+  color: white; /* Set text color to white for better contrast */
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(100, 10, 100, 100); /* Add shadow effect */
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  #invite {
+    padding: 30px 0; /* Reduce padding for smaller screens */
+  }
+}
+
+
+/* Gallery Styling */
+
+#gallery {
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icontainer1,
+.icontainer2 {
+  flex-basis: 45%;
+  margin: 10px;
+  position: relative;
+}
+
+.icontainer1 img,
+.icontainer2 img {
+  width: 100%; /* Ensuring the width is 100% */
+  height: auto; /* Ensuring the height adjusts proportionally */
+  border-radius: 50%; /* Make the images circular */
+}
+
+.icontainer1 p,
+.icontainer2 p {
+  margin: 10px 0;
+}
+
+.img-groom {
+  border: 5px solid #f39c12;
+}
+
+.img-bride {
+  border: 5px solid #e74c3c;
+}
+
+/* Styling for Photo Gallery 2 */
+#photos {
+  padding: 30px 0;
+  border-radius: 20px;
+}
+
+.layout {
+  max-width: 1370px;
+  margin: 0 auto;
+  padding: 0 10px;
+  border-radius: 20px;
+}
+
+.font-gallery {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.fantastic {
+  display: flex;
+  flex-direction: column;
+}
+
+.fantastic > div {
+  margin-bottom: 10px;
+}
+
+.img-college {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.3s ease, box-shadow 0.3s ease; /* Include box-shadow in the transition */
+  border-radius: 20px;
+}
+
+.img-college:hover {
+  filter: brightness(103%);
+  box-shadow: 0 0 20px rgba(0, 5, 1, 1);/* Add a thick black color shadow */
+}
+
+/* Styling for Photo Gallery 3 */
+#wall3 {
+  padding: 50px 0;
+  background: linear-gradient(135deg, #ffeb99, #ffcc66, #ff9999, #ff66cc);
+  border-radius: 20px;
+}
+
+.stills {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.font-super {
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.img-still {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-still:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 5, 1, 1);
+}
+
+/* Photographer Advertisement Styles */
+#photographer {
+  padding: 50px 0;
+  background: #f0f0f0;
+  border-radius: 20px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.photographer-info {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+}
+
+.logo,
+.photographer-photo,
+.contact-info {
+  flex: 1 1 100%; /* Each item takes full width initially */
+  text-align: center; /* Center align content */
+  padding: 10px; /* Add spacing around items */
+}
+
+.logo img,
+.photographer-photo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .photographer-info {
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+  }
+
+  .logo,
+  .photographer-photo,
+  .contact-info {
+    flex: 0 1 auto; /* Allow items to shrink */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 0 5px; /* Adjust container padding for smaller screens */
+  }
+
+  .logo,
+  .photographer-photo,
+  .contact-info {
+    flex: 1 1 100%; /* Each item takes full width */
+  }
+
+  .logo img,
+  .photographer-photo img {
+    max-width: 60%; /* Adjust image width for smaller screens */
+  }
+}
